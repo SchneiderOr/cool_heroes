@@ -2,7 +2,7 @@ require("dotenv").config({ debug: process.env.DEBUG });
 
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || process.argv[2];
+const PORT = process.env.PORT || process.argv[2] || 5050;
 const generalRouter = require("./routes");
 const herosRouter = require("./routes/heros");
 const logger = require("morgan");
