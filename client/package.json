@@ -16,7 +16,6 @@
     "react-router-redux": "4.0.8",
     "react-scripts": "1.1.1",
     "react-styled-flexboxgrid": "^2.2.0",
-    "recompose": "^0.27.1",
     "redux": "4.0.5",
     "redux-connect": "10.0.0",
     "redux-logger": "^3.0.6",
@@ -30,9 +29,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "@storybook/addon-actions": "^3.4.6",
-    "@storybook/addon-links": "^3.4.6",
-    "@storybook/react": "^3.4.6"
-  }
+  "devDependencies": {}
 }
