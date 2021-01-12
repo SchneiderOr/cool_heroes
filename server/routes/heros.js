@@ -5,8 +5,11 @@ const apiClient = require("../services/apiClient");
 const herosBase = require("../services/herosBase");
 
 router.get("/history", (req, res) => {
-  const { limit } = req.query;
-  const data = limit ? herosBase.slice(0, limit) : herosBase;
+  const { limit, reverse } = req.query;
+  let data = limit ? herosBase.slice(-limit) : herosBase;
+  if (reverse) {
+    data = data.reverse();
+  }
   res.send({ success: true, data, totalCount: herosBase.length });
 });
 
